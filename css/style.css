@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); /* Color palette */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
@@ -15,7 +15,7 @@
   width: 300px;
   height: 400px;
   margin: 0 auto;
-  background: #000;
+  background: black;
   border-radius: 15px;
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
 }
@@ -59,7 +59,7 @@
   margin: 0;
   padding: 0;
   font-size: 10em;
-  color: #fff;
+  color: white;
   transition: 0.5s;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -75,29 +75,103 @@
   border-radius: 15px;
 }
 .container .card:nth-child(2) .face.face2 {
-  background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #7700ff 100%);
+  background-image: linear-gradient(40deg, #7700ff 100%, #fc00ff 0%, #00fffc 45%);
   border-radius: 15px;
 }
 .container .card:nth-child(3) .face.face2 {
-  background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #7700ff 100%);
+  background-image: linear-gradient(40deg, #7700ff 100%, #fc00ff 45%, #00fffc 0%);
   border-radius: 15px;
 }
 
+/* Color palette */
+button {
+  border: none;
+  padding: 1em;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: 1.2em;
+  letter-spacing: 0.2em;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+@media only screen and (max-width: 420px) {
+  button {
+    display: none;
+  }
+}
+button:before, button:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10em;
+  transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: 105%;
+  content: "";
+  z-index: -2;
+  background-size: 400% 400%;
+  background: linear-gradient(60deg, #7700ff, #fc00ff, #00fffc);
+}
+button:before {
+  filter: blur(7px);
+  transition: all 0.25s ease;
+  animation: pulse 10s infinite ease;
+}
+button:after {
+  filter: blur(0.3px);
+}
+button:hover:before {
+  width: 115%;
+  height: 115%;
+}
+
+/* Color palette */
 body {
   margin: 0;
   padding: 0;
   font-family: "Righteous", cursive;
   min-height: 100vh;
-  background-image: linear-gradient(rgb(26, 25, 29) 100%, #000 0%);
+  background-image: linear-gradient(#181a19 100%, #181a19 50%);
 }
 body header {
-  background-color: rgb(26, 25, 29);
+  background-color: #181a19;
   justify-content: space-evenly;
+}
+@media only screen and (max-width: 420px) {
+  body header {
+    width: 100%;
+    justify-content: center;
+    margin: 0%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  body header {
+    font-size: 2vh;
+    justify-content: center;
+    margin: 1%;
+  }
 }
 body header nav ul {
   display: flex;
   justify-content: space-evenly;
   padding: 2%;
+}
+@media only screen and (max-width: 420px) {
+  body header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  body header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body header nav ul :hover {
   transform: scale(1.2);
@@ -121,15 +195,68 @@ body .main_sec {
   justify-content: center;
   height: 75vh;
   font-family: "MuseoModerno", cursive;
-  background-color: rgb(26, 25, 29);
+  background-color: #181a19;
+}
+@media only screen and (max-width: 420px) {
+  body .main_sec {
+    height: 35vh;
+    margin: 5%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  body .main_sec {
+    height: 55vh;
+    margin: 4%;
+  }
 }
 body .main_sec h1 {
   font-size: 14vh;
-  border: solid 2px rgb(47, 255, 255);
+  border: solid 2px #00fffc;
   padding: 2%;
+}
+@media only screen and (max-width: 420px) {
+  body .main_sec h1 {
+    font-size: 8vh;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  body .main_sec h1 {
+    font-size: 12vh;
+  }
 }
 body .main_sec h2 {
   font-family: "Poppins", sans-serif;
+}
+@media only screen and (max-width: 420px) {
+  body .main_sec h2 {
+    font-size: 2vh;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  body .main_sec h2 {
+    font-size: 4vh;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body .main_sec h3 {
+    font-size: 2.5vh;
+    padding-left: 5%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  body .main_sec h3 {
+    font-size: 4.5vh;
+    padding-left: 8%;
+  }
+}
+body .sec_sec ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+body .sec_sec ul li :hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
 }
 body footer ul {
   display: flex;
@@ -147,6 +274,53 @@ body footer ul li a img {
 }
 body footer ul :hover {
   transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts h2 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 400%;
+  margin: 0% 5%;
+}
+@media only screen and (max-width: 420px) {
+  .contacts h2 {
+    font-size: 200%;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .contacts h2 {
+    font-size: 300%;
+  }
+}
+.contacts ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 420px) {
+  .contacts ul {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .contacts ul {
+    flex-direction: column;
+  }
+}
+.contacts ul li {
+  margin: 12%;
+}
+.contacts ul li a img {
+  height: 30vh;
+}
+.contacts ul li a :hover {
+  transform: scale(1.3);
   transition: all 0.5s;
 }
 

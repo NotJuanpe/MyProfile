@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
+@import "../base/map";
 
 
   .container {
@@ -15,7 +15,7 @@
       width: 300px;
       height: 400px;
       margin: 0 auto;
-      background: #000;
+      background: map-get($color,black);
       border-radius: 15px;
       box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
 
@@ -28,7 +28,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         &.face1 {
           box-sizing: border-box;
           padding: 20px;
@@ -39,19 +39,19 @@
           }
 
           .java {
-            background-color: #fffc00;
+            background-color: map-get($color,fifth);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           .python {
-            background-color: #00fffc;
+            background-color: map-get($color,secondary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
 
           .cSharp {
-            background-color: #fc00ff;
+            background-color: map-get($color,fourth);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
@@ -64,7 +64,7 @@
             margin: 0;
             padding: 0;
             font-size: 10em;
-            color: #fff;
+            color: map-get($color,white);
             transition: 0.5s;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             z-index: 10;
@@ -84,9 +84,9 @@
     .card:nth-child(1) .face.face2 {
       background-image: linear-gradient(
         40deg,
-        #7700ff  0%,
-        #fc00ff 45%,
-        #00fffc 100%
+        map-get($color,third)  0%,
+        map-get($color,fourth) 45%,
+        map-get($color,secondary) 100%
       );
       border-radius: 15px;
     }
@@ -94,19 +94,19 @@
     .card:nth-child(2) .face.face2 {
       background-image: linear-gradient(
         40deg,
-        #fc00ff 0%,
-        #00fffc 45%,
-        #7700ff 100%
+        map-get($color,third)  100%,
+        map-get($color,fourth) 0%,
+        map-get($color,secondary) 45%
       );
       border-radius: 15px;
     }
 
     .card:nth-child(3) .face.face2 {
       background-image: linear-gradient(
-        40deg,
-        #00fffc 0%,
-        #fc00ff 45%,
-        #7700ff 100%
+        40deg,   
+        map-get($color,third)  100%,
+        map-get($color,fourth) 45%,
+        map-get($color,secondary) 0%
       );
       border-radius: 15px;
     }
