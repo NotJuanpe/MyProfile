@@ -187,6 +187,12 @@ body header nav ul li a {
   font-size: larger;
   color: white;
 }
+body header nav ul li h3 {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  color: white;
+}
 body .main_sec {
   display: flex;
   flex-direction: column;
