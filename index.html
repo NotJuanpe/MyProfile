@@ -18,9 +18,9 @@
     <!-- Navbar -->
     <header>
         
-      <nav>
+      <nav class="d-none d-lg-block navl">
         <ul>
-          <li><h3 href="../index.html">JUAN <strong>\RODRIGUEZ</strong></h3></li>
+          <li><h3 >JUAN <strong>\RODRIGUEZ</strong></h3></li>
           <li><a href="../index.html">Home</a></li>
           <li><a href="/menu/habilidades.html">Habilities</a></li>
           <li><a href="/menu/experiencia.html">Experience</a></li>
@@ -28,31 +28,124 @@
           <li><a href="/menu/contacto.html">Contact</a></li>
         </ul>
       </nav>
+
+      <nav class="navbar navbar-dark d-lg-none fixed-top nave">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">JUAN <strong>\RODRIGUEZ</strong></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/menu/habilidades.html">Habilites</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/menu/experiencia.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/menu/acerca_de.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/menu/contacto.html">Contact</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
     </header>
 
     <!-- Seccion Principal -->
     <section class="main_sec">
 
-      <h1>HELLO! I'M JUAN</h1>
+      <h1>HELLO!</h1>
 
       <h2>Welcome to my website</h2>
-
-      <h3>I'm currently studyng Computer Engineering major at UNTREF </h3>
-      
 
     </section>
 
     <!-- Seccion Secundaria -->
     <section class="sec_sec">
+
+      <div class="container">
+        <div class="timeline">
+            <div class="timeline-container primary">
+                <div class="timeline-icon">
+                    <i class="far fa-grin-wink"></i>
+                </div>
+                <div class="timeline-body">
+                    <h4 class="timeline-title"><span class="badge">About Me</span></h4>
+                    <p>Hi my name is Juan Pedro and I'm Computer Engineering student mayor and I'm 21 years old.</p>
+                    <p class="timeline-subtitle">21 Years Ago</p>
+                </div>
+            </div>
+            <div class="timeline-container danger">
+                <div class="timeline-icon">
+                    <i class="far fa-grin-hearts"></i>
+                </div>
+                <div class="timeline-body">
+                    <h4 class="timeline-title"><span class="badge">Interests</span></h4>
+                    <p>I've got a vast ammount of interests. First of all I'm a sport and video games enthusiast but coding and series and movies are also some of them.</p>
+                </div>
+            </div>
+            <div class="timeline-container success">
+                <div class="timeline-icon">
+                    <i class="far fa-grin-tears"></i>
+                </div>
+                <div class="timeline-body">
+                    <h4 class="timeline-title"><span class="badge">Education</span></h4>
+                    <p>I completed my Primary and Secondary school at Brighton English College. Where I graduated in Economics with 13 years of English and 4 years of Portuguese then I started a career at
+                      Universidad de Tres de Febrero and I been studying a career there ever since
+                    </p>
+                    <p class="timeline-subtitle">Since 2005</p>
+                </div>
+            </div>
+            <div class="timeline-container warning">
+                <div class="timeline-icon">
+                    <i class="far fa-grimace"></i>
+                </div>
+                <div class="timeline-body">
+                    <h4 class="timeline-title"><span class="badge">Skills</span></h4>
+                    <p>Some of my most important skills are programing related, starting by programming in Java when I was 18 years old then a year later I incursioned in Python (I still prefer Java).
+                      This year I started trying to learn some Web Development oriented skills and it's not going so bad this page is made with HTML ,CSS and some help from Coderhouse and Google. Apart
+                      from all this I'm starting to dedicate some of my spare time to develop websites as a side-hustle aswell as some Cypress for automation. Looking foward I'm looking foward to take a 
+                      step in Javascript.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-icon">
+                    <i class="far fa-grin-beam-sweat"></i>
+                </div>
+                <div class="timeline-body">
+                    <h4 class="timeline-title"><span class="badge">Proyects</span></h4>
+                    <p>Nowadays I'm developing some proyects most of them are web-development related (Im developing websites for two enterprices "Las Piaritas" and "J&M Iluminacion"). Apart
+                      from web-developing I'm also doing some pages automation for cypress practice and some small Javascript oriented proyects mostly for fun.
+                    </p>
+                    <p class="timeline-subtitle">3 Weeks Ago</p>
+                </div>
+            </div>
+            <div class="timeline-container info">
+                <div class="timeline-icon">
+                    <i class="far fa-grin"></i>
+                </div>
+                <div class="timeline-body">
+                    <h4 class="timeline-title"><span class="badge">Contact</span></h4>
+                    <p>Well if are interested in me just hop on the contact section and we can talk a bit more.</p>
+                    <p class="timeline-subtitle">Now</p>
+                </div>
+            </div>
+        </div>
+    </div>
       
-      <ul>
-
-
-        <li><a href="/menu/acerca_de.html"><button>About Me</button></a></li>
-        <li><a href="/menu/experiencia.html"><button>Experience</button></a></li>
-        <li><a href="/menu/habilidades.html"><button>Habilities</button></a></li>
-      </ul>
-
     </section>
 
     <!-- Footer -->

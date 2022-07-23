@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(map-get($color,main) 100%, map-get($color,main) 50%);
 
-
     header{
         background-color:map-get($color,main);
         justify-content: space-evenly;
@@ -30,24 +29,29 @@ body {
         font-size: 2vh;
         justify-content: center;
         margin: 1%;
-    }
-        nav{
+    }   
+
+        .nave{
+            ul{ 
+                li{
+                    padding-left: 3%;
+                }
+                :hover{
+                    transform: scale(1.03);
+                    border-radius: 4%;
+                    transition: all 0.5s;
+                }
+            }
+
+        }
+        
+        .navl{
+
             ul{
                 display: flex;
                 justify-content: space-evenly;
                 padding: 2%;
 
-                @media only screen and (max-width: 420px) {
-
-                    flex-direction: column;
-                    align-items: center;
-                      
-                }
-
-                @media only screen and (min-width:421px ) and (max-width:960px){
-                    flex-direction: column;
-                    align-items: center;
-                }
             
             :hover{
                 transform: scale(1.2);
@@ -140,18 +144,10 @@ body {
     }
 
     .sec_sec{
-        ul{
-            display: flex;
-            justify-content: space-evenly;
-            list-style: none;
-
-            li{
-                :hover{
-                    transform: scale(1.3);
-                    transition: all 0.5s;
-                }
-            }
-        }
+        
+        display: flex;
+        justify-content:center;
+        align-content:center;
 
 
     }
@@ -226,3 +222,4 @@ body {
         }
     }
 }
+
