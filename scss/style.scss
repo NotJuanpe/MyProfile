@@ -1,6 +1,8 @@
 @import "./components/card";
 @import "./components/card2";
 @import "./base/map";
+@import "./components/timeline";
+@import "./components/form";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
@@ -163,8 +165,7 @@ body {
                 margin: 5%;
                 a{
                     img{
-                        height: 12vh;
-                        width: 10;
+                        height: 10vh;
                     }
                 }
             }
