@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); /* Color palette */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
@@ -215,6 +216,139 @@
 .author .btn:visited:focus,
 .author .btn:visited:active {
   background-color: #1a1a1a;
+}
+
+.services .container {
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services p {
+  margin: 0px;
+}
+.services .card {
+  width: 280px;
+  height: 520px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  overflow: hidden;
+}
+.services .card .backgroundEffect {
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+.services .card:hover {
+  color: #fff;
+  transform: scale(1.025);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+}
+.services .card:hover .backgroundEffect {
+  bottom: 0;
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #1b9ce3;
+  animation: popBackground 0.3s ease-in;
+}
+@keyframes popBackground {
+  0% {
+    height: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  50% {
+    height: 80px;
+    border-top-left-radius: 75%;
+    border-top-right-radius: 75%;
+  }
+  75% {
+    height: 160px;
+    border-top-left-radius: 85%;
+    border-top-right-radius: 85%;
+  }
+  100% {
+    height: 320px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+}
+.services .card .pic {
+  position: relative;
+}
+.services .card .pic img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+.services .card .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 70px;
+  background-color: #1b9ce3;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  transition: all ease;
+}
+.services .card .date .day {
+  font-size: 14px;
+  font-weight: 600;
+}
+.services .card .date .month,
+.services .card .date .year {
+  font-size: 10px;
+}
+.services .card .text-muted {
+  font-size: 12px;
+}
+.services .card:hover .text-muted {
+  color: #fff !important;
+}
+.services .card .content {
+  padding: 0 20px;
+}
+.services .card .content a {
+  text-decoration: none;
+}
+.services .card .content a .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: #1b9ce3;
+  border-radius: 25px;
+  font-size: 12px;
+  border: none;
+}
+.services .card:hover .content .btn {
+  background: #fff;
+  color: #1b9ce3;
+  box-shadow: rgba(0, 0, 0, 0.1019607843) 0px 3px 5px;
+}
+.services .card .content .btn .fas {
+  font-size: 10px;
+  padding-left: 5px;
+}
+.services .card .content .foot .admin {
+  color: #1b9ce3;
+  font-size: 12px;
+}
+.services .card:hover .content .foot .admin {
+  color: #fff;
+}
+.services .card .content .foot .icon {
+  font-size: 12px;
 }
 
 /* Color palette */
